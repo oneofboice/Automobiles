@@ -41,7 +41,7 @@ export class AutomobileEditor extends Component {
                 </FormGroup>
                 <FormGroup>
                     <Label for="seatsCount">Seats Count</Label>
-                    <Input id = "seatsCount" min={0} max={50} type="number" step="1" defaultValue={this.state.automobile?.seatsCount ?? ''} onChange={(e) => {this.handleChange(e)}}> </Input>
+                    <Input id = "seatsCount" min={1} max={50} type="number" step="1" defaultValue={this.state.automobile?.seatsCount ?? ''} onChange={(e) => {this.handleChange(e)}}> </Input>
                 </FormGroup>
                 <Button type="submit">Submit</Button>
             </Form>
